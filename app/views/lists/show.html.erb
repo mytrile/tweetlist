@@ -1,0 +1,7 @@
+<h1><%= @list.name %></h1>
+<ul>
+  <% for link in @list.links %>
+    <li><h3><%= link_to link.url, link.url %></h3></li>
+<% end %>
+
+<div id="short_link"><h2>Your short url : <%=link_to "#{@list.short_url}", @list.short_url, :class => 'shortlink' %>&nbsp;<%= link_to image_tag("tweetme.png"), "http://twitter.com/home?status=#{@list.name} : #{@list.short_url}", :class => 'tweetme' %></h2></div>

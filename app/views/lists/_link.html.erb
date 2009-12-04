@@ -1,0 +1,8 @@
+<div class="link">
+<% fields_for "list[link_attributes][]", link do |link_form| %>
+  <p>
+  <label for="web">Link</label>
+  <%= link_form.text_field :url %>
+  <%= link_to_function image_tag("delete_icon.gif"), "this.up('.link').remove()" %>
+  </p></div>
+<% end %>

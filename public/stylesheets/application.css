@@ -1,0 +1,243 @@
+body { 
+       background:#90d4f1 url(../images/bg.gif) top left;
+       background-repeat: no-repeat;
+	     font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	     color:#333;
+	     line-height:160%;
+	     margin-top: 10px;
+	     padding:0;
+	     text-align:center;
+     }
+
+h1 {
+     font-size:200%;
+	   font-weight:normal;
+     text-align: center;
+     margin-bottom: 30px;
+   }
+
+h2, h3, h4, h5, h6 {
+  font-weight:normal;
+	margin: 0;
+  color #000;
+}
+
+h2 { 
+  font-size:160%;
+  text-align: center;
+  margin-top: 20px; 
+ }
+h3 { font-size:14px;
+     padding: 2px;
+     margin-left: 10px; }
+
+h4 { font-size:120%; }
+
+a {
+	  text-decoration:none;
+	  color:#000;
+	}
+
+a:hover { text-decoration: underline; }
+
+table, input, textarea, select, li {
+	font:100% Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	line-height:160%;
+	color:#333;
+}
+
+p, blockquote, ul, ol, form{ margin:1em 0; }
+
+blockquote {	}
+
+img { border:none; }
+
+hr { display:none; }
+
+table {
+	margin:1em 0;
+	width:100%;
+	border-collapse:collapse;
+	}
+
+th, td {	padding:2px 5px; }
+
+th { text-align:left;	}
+
+li { display:list-item; }
+
+#container {	
+  margin: auto;
+  width:570px;
+  text-align:left;
+  background-color: #FFF;
+  border-radius: 2em;
+  -moz-border-radius-topleft: 3em;
+  -moz-border-radius-bottomright: 3em;
+  -moz-border-radius-topright: 1em;
+  -moz-border-radius-bottomleft: 1em;
+  -webkit-border-top-left-radius: 3em;
+  -webkit-border-bottom-right-radius: 3em;
+  -webkit-border-top-right-radius: 1em;
+  -webkit-border-bottom-left-radius: 1em;
+  padding: 5px;
+	}
+
+  #footer {
+    margin: auto;
+    width: 575px;
+    padding: 5px;
+  }
+
+	#new_list{
+		margin:1em 0;
+		padding-top:10px;
+		}
+	#new_list fieldset{
+		margin:0;
+		padding-top:.5em;
+		border:none;	
+		}		
+	#new_list legend{
+		background:#fff;
+		padding:0 5px;
+		font-style:italic;
+		}	
+	#new_list p{
+		clear:both;
+		margin:.5em 0;
+		overflow:hidden;
+		}	
+	#new_list label{
+		float:left;
+		width:60px;
+		display:block;
+		text-align:right;
+		margin-right:10px;
+		}	
+	#new_list input, #new_list textarea{	
+		margin:0;	
+		width:400px;
+		border:1px solid #ddd;		
+		padding:3px 5px 3px 25px;
+		}		
+	
+	
+	#new_list input#list_name{background:#fff url(../images/form_name.png) no-repeat 5px 50%;}
+	#new_list input#list_email{background:#fff url(../images/form_email.gif) no-repeat 5px 50%;}
+	#new_list input#list_link_attributes__url{background:#fff url(../images/form_url.gif) no-repeat 5px 50%;}
+	#new_list textarea#list_message{background:#fff url(../images/form_note.gif) no-repeat 5px 6px;}
+	
+	
+	#new_list textarea{
+		height:125px;
+		overflow:auto;
+		}					
+	#new_list p.submit{
+		clear:both;
+		margin:1em 0;
+		padding:.5em 70px;
+		
+		}	
+	#new_list input#submit_button{
+		height:28px;
+		line-height:28px;		
+		border-top:1px solid #999;
+		border-left:1px solid #999;
+		border-right:1px solid #333;
+		border-bottom:1px solid #333;
+		padding:0 10px 0 25px;
+		color:#333;
+		cursor:pointer;
+		text-align:center;
+		font-size:14px;
+		font-weight:bold;
+    width: 430px;
+    background:url('../images/form_button.gif');
+		}
+
+pre {
+  background-color: #eee;
+  padding: 5px;
+  font-size: 11px;
+}
+
+
+#error { 
+  border: 5px;
+  border-color: red;
+  border-style: solid;
+}
+
+#errorExplanation {
+  display: none;
+}
+.errorExplanation {
+  display: none;
+}
+
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: auto;
+  margin-top: 10px;
+  width: 450px;
+  text-align: center;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+#short_link {
+  padding: 5px;
+}
+a.shortlink {
+  color: #90d4f1;
+  background: #000;
+  padding: 5px;
+}
+a.shortlink:visited {
+  color: #90d4f1;
+  background: #000;
+  padding: 5px;
+}
+
+ a.shortlink:hover {
+  background: #000;
+  color: #FFF;
+  padding: 5px;
+}
+
+.contactinfo {
+  float: right;
+}
+
+.contactinfo a:link, a:visited, a:active { color: #000; background: transparent }
+.contactinfo a:hover { text-decoration: underline; }
+
+.newtweetlist {
+  float: left;
+}
+
+#addnew {
+  margin-left: 440px;
+}
+
+a.tweetme {
+  background: #FFF;
+  padding: 5px;
+
+}
+a.tweetme:hover {
+  background: #000;
+  padding: 5px;
+}
+
+#info {
+  text-align: left;
+}

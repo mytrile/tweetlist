@@ -1,0 +1,17 @@
+<% form_for @list do |f| %>
+  <%= f.error_messages %>
+   <fieldset>
+      <p class="first">
+        <label for="name">Name</label>
+        <%= f.text_field :name %>
+     </p>
+     <div id="links">
+       <%= render :partial => 'link', :collection => @list.links %>
+     </div>
+     <%= link_to_function "Add a link", :id => 'addnew'  do |page|
+         page.insert_html :bottom, :links, :partial => 'link', :object => Link.new
+       end %>
+
+       <p class="submit"><%= submit_tag "Create tweetlist", :id => 'submit_button' %></p>
+     </fieldset>
+<% end  %>
